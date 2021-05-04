@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Search</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+          <div class="searchBox">
+              <img src="./google-logo.png" class="googleIcon" alt="">
+              <input type="text" class="input" placeholder="Search Google pr type a URL">
+              <img src="./mic.png" class="mic" alt="">
+          </div>
+      </div>
+      <script>
+          var searchBox = document.querySelector('.searchBox');
+          var googleIcon = document.querySelector('.googleIcon');
+
+          googleIcon.onclick =function(){
+              searchBox.classList.toggle("active");
+          }
+      </script>
+    </body>
+</html>
